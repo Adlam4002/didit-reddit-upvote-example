@@ -4,6 +4,7 @@ import { UserInfo } from "../components/UserInfo";
 import "./globals.css";
 import Link from "next/link";
 import { Providers } from "@/Providers";
+import { MyProfile } from "@/components/MyProfile";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default async function RootLayout({ children }) {
             >
               Add post
             </Link>
+
             <div className="ml-auto">
               <UserInfo />
             </div>

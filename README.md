@@ -48,3 +48,19 @@ The project is a work in progress and is not yet complete.
 - [ ] User flair
 
 the Add post button had a hover effect but login didn't. I added it to the login to make the styling more consistent
+
+## The link to my GitHub repo: https://github.com/Adlam4002/didit-reddit-upvote-example
+
+## The link to my deployed app: https://didit-reddit-upvote-example-ten.vercel.app
+
+# Reflection
+
+The first thing I did in this week’s project was to fork the repo. I then created an app in OAuth. This allowed me to use it later in the project. I then used the provided database schema to produce tables on Supabase so data could be stored and retrieved. I then tried to deploy the site to Vercel. There were errors that I had to fix. Based on the errors I thought it was the environment variables not being on the Vercel deployment. I then added the env variables to the deployment and it was successful.
+
+I then set about changing the metadata of the posts pages. I decided to use the post title as the title for the tab as that’s the data most suitable. To do this I used the generateMetadata function. Inside the function I selected the post data from the database and then utilising that data I returned a metadata object.
+
+If a non-signed-in user tries to vote on a post an error is thrown. This is not very user-friendly so I decided instead I would make an error page. On this page, the user is presented with a message explaining what has happened and they can click try again to reset the page., rather than being stuck on an error.
+
+I was going to add a page for the user to view all the posts they had made but due to time constraints, I did not complete this.
+
+The website had two buttons that were styled similarly but only one had a hover effect. I didn’t like this inconsistency, so I added the hover effect to both and used the same styling for the button on my error page.

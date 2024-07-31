@@ -4,6 +4,7 @@ import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 import { LoginButton } from "@/components/LoginButton";
 import { LogoutButton } from "@/components/LogoutButton";
+import Tiptap from "@/components/TipTap";
 
 export default async function Home() {
   const session = await auth();
@@ -38,6 +39,7 @@ export default async function Home() {
     <div className="max-w-screen-lg mx-auto p-4 bg-zinc-800 mt-10 rounded-xl">
       <h2 className="text-3xl mb-4">Add a new post</h2>
       <form action={savePost} className="flex flex-col space-y-4">
+        {/* <Tiptap name="title" placeholder="Post title..." /> */}
         <input
           type="text"
           name="title"
