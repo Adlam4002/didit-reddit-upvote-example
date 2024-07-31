@@ -46,3 +46,5 @@ The project is a work in progress and is not yet complete.
 - [ ] User following
 - [ ] User feed (posts from users you follow)
 - [ ] User flair
+
+the Add post button had a hover effect but login didn't. I added it to the login to make the styling more consistent
